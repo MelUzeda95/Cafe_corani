@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 0 auto 25px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  color: #75472d;
+}
+
+.container p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.locationButton,
+.contactButton {
+  display: inline-block;
+  margin: 8px;
+  padding: 11px 20px;
+  border-radius: 8px;
+  background-color: #895637;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.locationButton:hover,
+.contactButton:hover {
+  background-color: #6f4129;
+}
+
+.backLink {
+  display: block;
+  margin-top: 15px;
+  color: #75472d;
+  font-weight: 700;
+}
+
+.contactSection {
+  margin-top: 40px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #f4eeee;
+}
+
+.contactSection h2 {
+  margin-top: 0;
+  color: #75472d;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .image {
+    height: 220px;
+  }
+}

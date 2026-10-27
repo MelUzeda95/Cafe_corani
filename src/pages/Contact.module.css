@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  color: #75472d;
+  text-align: center;
+}
+
+.branch {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #555;
+}
+
+.form {
+  padding: 25px;
+  border-radius: 18px;
+  background-color: #f4eeee;
+  border: 1px solid #777;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.field label {
+  margin-bottom: 7px;
+  color: #75472d;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid #895637;
+  border-color: #895637;
+}
+
+.error {
+  margin-top: 5px;
+  color: #b3261e;
+  font-size: 13px;
+}
+
+.button,
+.clearButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #895637;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #6f4129;
+}
+
+.clearButton {
+  margin-top: 10px;
+  background-color: #ddd;
+  color: #333;
+}
+
+.clearButton:hover {
+  background-color: #ccc;
+}
+
+.success {
+  padding: 35px 25px;
+  border-radius: 18px;
+  background-color: #f4eeee;
+  text-align: center;
+}
+
+.success h1 {
+  color: #75472d;
+}
+
+.success p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .form {
+    padding: 20px;
+  }
+}

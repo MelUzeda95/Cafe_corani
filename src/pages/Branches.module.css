@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.container h1 {
+  margin: 0 0 8px;
+  color: #75472d;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 30px;
+  color: #555;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
