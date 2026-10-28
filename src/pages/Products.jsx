@@ -1,6 +1,6 @@
-
 import { useState } from "react";
 import ProductCard from "../components/ProductCard";
+import CoffeeApi from "../components/CoffeeApi";
 import styles from "./Products.module.css";
 
 const products = [
@@ -52,21 +52,27 @@ function Products() {
     setMessage(
       `Pedido solicitado para ${selectedProduct.name}. ¡Gracias, ${fullName}!`
     );
+
     setSelectedProduct(null);
   }
 
   return (
     <main className={styles.page}>
+     
       <section className={styles.hero}>
         <p className={styles.eyebrow}>CAFÉ CORANI</p>
+
         <h1>El sabor de nuestros orígenes</h1>
+
         <p>
           Descubre el aroma y la esencia de nuestro café de grano.
         </p>
       </section>
 
+    
       <section className={styles.catalog}>
         <h2>Nuestros cafés</h2>
+
         <p className={styles.intro}>
           Encuentra tu favorito y disfruta cada taza.
         </p>
@@ -87,6 +93,9 @@ function Products() {
           </p>
         )}
       </section>
+
+      
+      <CoffeeApi />
 
       {selectedProduct && (
         <div
@@ -110,12 +119,17 @@ function Products() {
             </button>
 
             <h2 id="order-title">Realizar pedido</h2>
+
             <p className={styles.productName}>
               {selectedProduct.name}
             </p>
 
             <form onSubmit={handleSubmit}>
-              <label htmlFor="fullName">Nombre completo</label>
+              {/* Nombre */}
+              <label htmlFor="fullName">
+                Nombre completo
+              </label>
+
               <input
                 id="fullName"
                 type="text"
@@ -127,7 +141,11 @@ function Products() {
                 required
               />
 
-              <label htmlFor="grindType">Tipo de molienda</label>
+              {/* Tipo de molienda */}
+              <label htmlFor="grindType">
+                Tipo de molienda
+              </label>
+
               <select
                 id="grindType"
                 value={grindType}
@@ -136,14 +154,32 @@ function Products() {
                 }
                 required
               >
-                <option value="">Selecciona una opción</option>
-                <option value="Grano entero">Grano entero</option>
-                <option value="Molido fino">Molido fino</option>
-                <option value="Molido medio">Molido medio</option>
-                <option value="Molido grueso">Molido grueso</option>
+                <option value="">
+                  Selecciona una opción
+                </option>
+
+                <option value="Grano entero">
+                  Grano entero
+                </option>
+
+                <option value="Molido fino">
+                  Molido fino
+                </option>
+
+                <option value="Molido medio">
+                  Molido medio
+                </option>
+
+                <option value="Molido grueso">
+                  Molido grueso
+                </option>
               </select>
 
-              <label htmlFor="presentation">Presentación</label>
+              {/* Presentación */}
+              <label htmlFor="presentation">
+                Presentación
+              </label>
+
               <select
                 id="presentation"
                 value={presentation}
@@ -158,7 +194,11 @@ function Products() {
                 <option value="1 kg">1 kg</option>
               </select>
 
-              <button type="submit" className={styles.submit}>
+              {/* Enviar */}
+              <button
+                type="submit"
+                className={styles.submit}
+              >
                 Enviar
               </button>
             </form>
